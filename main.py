@@ -20,6 +20,11 @@ class CircleInterface(QWidget):
         layout.addWidget(self.view)
         layout.addWidget(self.button)
 
+    @staticmethod
+    def create_random_circle(self):
+        diameter = random.randint(20, 100)
+        color = QColor(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
+
 
 class MainWindow(QMainWindow):
     def __init__(self):
