@@ -9,3 +9,9 @@ class CircleInterface(QWidget):
         self.button = QPushButton('Создать', self)
         self.button.clicked.connect(self.create_random_circle)
 
+
+class MainWindow(QMainWindow):
+    def __init__(self):
+        super(MainWindow, self).__init__()
+
+
